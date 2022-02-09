@@ -1,0 +1,72 @@
+[
+  {
+    "directory": "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/_ide/_build/concurrent_kernel_execution",
+    "command": "/bin/g++ -DVITIS_MAJOR_VERSION\u003d2022 -DVITIS_MINOR_VERSION\u003d1 -DVITIS_PLATFORM\u003dxilinx_aws-vu9p-f1_shell-v04261818_201920_3 -DVITIS_VERSION\u003d2022.1 -D__USE_XOPEN2K8 -I/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/concurrent_kernel_execution/../common/libs/common/includes/xcl2 -I/proj/xbuilds/SWIP/2022.1_0205_2302/installs/lin64/Vitis_HLS/2022.1/include -I/proj/xbuilds/XRT/master/202210.2.13.368/packages/x86_64/xrt-2.13.368_centos_7.8/opt/xilinx/xrt/include -g -std\u003dc++1y -o CMakeFiles/concurrent_kernel_execution.dir/libs/common/includes/xcl2/xcl2.cpp.o -c /proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/concurrent_kernel_execution/libs/common/includes/xcl2/xcl2.cpp",
+    "file": "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/concurrent_kernel_execution/libs/common/includes/xcl2/xcl2.cpp"
+  },
+  {
+    "directory": "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/_ide/_build/concurrent_kernel_execution",
+    "command": "/bin/g++ -DVITIS_MAJOR_VERSION\u003d2022 -DVITIS_MINOR_VERSION\u003d1 -DVITIS_PLATFORM\u003dxilinx_aws-vu9p-f1_shell-v04261818_201920_3 -DVITIS_VERSION\u003d2022.1 -D__USE_XOPEN2K8 -I/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/concurrent_kernel_execution/../common/libs/common/includes/xcl2 -I/proj/xbuilds/SWIP/2022.1_0205_2302/installs/lin64/Vitis_HLS/2022.1/include -I/proj/xbuilds/XRT/master/202210.2.13.368/packages/x86_64/xrt-2.13.368_centos_7.8/opt/xilinx/xrt/include -g -std\u003dc++1y -o CMakeFiles/concurrent_kernel_execution.dir/src/host.cpp.o -c /proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/concurrent_kernel_execution/src/host.cpp",
+    "file": "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/concurrent_kernel_execution/src/host.cpp"
+  },
+  {
+    "directory": "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/_ide/_build/pl_kernels",
+    "arguments": [
+      "/bin/g++",
+      "--platform",
+      "/proj/xbuilds/2022.1_daily_latest/internal_platforms/xilinx_aws-vu9p-f1_shell-v04261818_201920_3/xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xpfm",
+      "--target",
+      "sw_emu",
+      "-I/proj/xbuilds/SWIP/2022.1_0205_2302/installs/lin64/Vitis_HLS/2022.1/include",
+      "--compile",
+      "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/pl_kernels/src/mmult.cpp",
+      "--kernel",
+      "mmult",
+      "--config",
+      "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/pl_kernels/mmult-compile.cfg",
+      "-o",
+      "mmult.xo"
+    ],
+    "file": "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/pl_kernels/src/mmult.cpp"
+  },
+  {
+    "directory": "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/_ide/_build/pl_kernels",
+    "arguments": [
+      "/bin/g++",
+      "--platform",
+      "/proj/xbuilds/2022.1_daily_latest/internal_platforms/xilinx_aws-vu9p-f1_shell-v04261818_201920_3/xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xpfm",
+      "--target",
+      "sw_emu",
+      "-I/proj/xbuilds/SWIP/2022.1_0205_2302/installs/lin64/Vitis_HLS/2022.1/include",
+      "--compile",
+      "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/pl_kernels/src/madd.cpp",
+      "--kernel",
+      "madd",
+      "--config",
+      "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/pl_kernels/madd-compile.cfg",
+      "-o",
+      "madd.xo"
+    ],
+    "file": "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/pl_kernels/src/madd.cpp"
+  },
+  {
+    "directory": "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/_ide/_build/pl_kernels",
+    "arguments": [
+      "/bin/g++",
+      "--platform",
+      "/proj/xbuilds/2022.1_daily_latest/internal_platforms/xilinx_aws-vu9p-f1_shell-v04261818_201920_3/xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xpfm",
+      "--target",
+      "sw_emu",
+      "-I/proj/xbuilds/SWIP/2022.1_0205_2302/installs/lin64/Vitis_HLS/2022.1/include",
+      "--compile",
+      "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/pl_kernels/src/mscale.cpp",
+      "--kernel",
+      "mscale",
+      "--config",
+      "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/pl_kernels/mscale-compile.cfg",
+      "-o",
+      "mscale.xo"
+    ],
+    "file": "/proj/xirsqa/impflow/austino/2022.1/workspaces/git_source_control_example/concurrent_kernel_execution/pl_kernels/src/mscale.cpp"
+  }
+]

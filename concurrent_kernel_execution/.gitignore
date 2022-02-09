@@ -1,0 +1,12 @@
+# Ignore build output directory
+/build_hw/
+/build_hw_emu/
+/build_sw_emu/
+
+
+# Ignore object files and dependent files
+.o
+.d
+
+#Ignore log files
+.log

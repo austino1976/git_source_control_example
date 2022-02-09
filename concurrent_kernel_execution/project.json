@@ -1,0 +1,137 @@
+{
+  "modelVersion": "1.0",
+  "projectName": "concurrent_kernel_execution",
+  "platform": "/proj/xbuilds/2022.1_daily_latest/internal_platforms/xilinx_aws-vu9p-f1_shell-v04261818_201920_3/xilinx_aws-vu9p-f1_shell-v04261818_201920_3.xpfm",
+  "components": [
+    {
+      "name": "package",
+      "type": "PACKAGE",
+      "configuration": {
+        "componentType": "PACKAGE",
+        "packageConfigurations": [
+          {
+            "configId": "package.default",
+            "options": []
+          }
+        ],
+        "configFiles": [
+          "package/package.cfg"
+        ]
+      }
+    },
+    {
+      "name": "concurrent_kernel_execution",
+      "type": "HOST",
+      "configuration": {
+        "componentType": "HOST",
+        "hostToolchainConfigurations": [
+          {
+            "configId": "concurrent_kernel_execution.default",
+            "compilerSymbols": [],
+            "compilerIncludes": [
+              "common/libs/common/includes/xcl2"
+            ],
+            "compilerOptions": [],
+            "linkerLibraries": [],
+            "linkerLibraryPaths": [],
+            "linkerOptions": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "hw_link",
+      "type": "HW_LINKER",
+      "configuration": {
+        "componentType": "HW_LINKER",
+        "containers": [
+          {
+            "name": "matrix_ops",
+            "kernels": {
+              "madd": "pl_kernels",
+              "mscale": "pl_kernels",
+              "mmult": "pl_kernels"
+            },
+            "cfgFiles": [
+              "hw_link/matrix_ops-link.cfg"
+            ]
+          }
+        ],
+        "vppLinkerConfigurations": [
+          {
+            "configId": "hw_link.default",
+            "options": [],
+            "containerOptions": {},
+            "buildDatafiles": []
+          }
+        ]
+      }
+    },
+    {
+      "name": "pl_kernels",
+      "type": "PL_KERNEL",
+      "configuration": {
+        "componentType": "PL_KERNEL",
+        "plKernels": [
+          {
+            "kernelName": "madd",
+            "kernelSourceFiles": [
+              "pl_kernels/src/madd.cpp"
+            ],
+            "cfgFiles": [
+              "pl_kernels/madd-compile.cfg"
+            ]
+          },
+          {
+            "kernelName": "mscale",
+            "kernelSourceFiles": [
+              "pl_kernels/src/mscale.cpp"
+            ],
+            "cfgFiles": [
+              "pl_kernels/mscale-compile.cfg"
+            ]
+          },
+          {
+            "kernelName": "mmult",
+            "kernelSourceFiles": [
+              "pl_kernels/src/mmult.cpp"
+            ],
+            "cfgFiles": [
+              "pl_kernels/mmult-compile.cfg"
+            ]
+          }
+        ],
+        "userManagedKernels": [],
+        "vppCompilerConfigurations": [
+          {
+            "configId": "pl_kernels.default",
+            "symbols": [],
+            "includes": [],
+            "options": [],
+            "kernelOptions": {},
+            "buildDatafiles": []
+          }
+        ]
+      }
+    }
+  ],
+  "buildConfigurations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "supportedTargets": [
+        "SW_EMU",
+        "HARDWARE",
+        "HW_EMU"
+      ],
+      "componentConfigMap": {
+        "package": "package.default",
+        "concurrent_kernel_execution": "concurrent_kernel_execution.default",
+        "hw_link": "hw_link.default",
+        "pl_kernels": "pl_kernels.default"
+      }
+    }
+  ],
+  "activeBuildConfigId": "default",
+  "applicationFlow": "DATA_CENTER"
+}
